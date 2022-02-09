@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        body {
+          font-family: sans-serif;
+          padding-left: 20%;
+          padding-right: 20%;
+        }
+        label {
+          font-size: 18px;
+          display: block;
+          padding-bottom: 10px;
+        }
+        input, textarea, select {
+          display: block;
+          width: 100%;
+          padding-bottom: 20px;
+        }
+  
+        form {
+          background-color: cadetblue;
+          padding: 40px 40px 40px 40px;
+        }
+  
+        #button-area {
+          float: left;
+          width: 50%;
+          height: 50%;
+        }
+  
+        input[type=checkbox]:not(old) + label,
+        input[type=radio   ]:not(old) + label {
+          display      : inline-block;
+          margin-left  : -28px;
+          padding-left : 28px;
+        }
+      </style>
+
+
+
+
+
+</head>
+<body>
+    
+
+       <h1 id="title">Tell me about music now.</h1>
+       <p id="description">This is a survey form where you can tell us about music you inspired by.</p>
+
+       <form action="" id="survey-form">
+
+           <label id="name-label">Name:</label> 
+            <input type="text" name="name" id="name" placeholder="name" required><br><br>
+
+           <label id="email-label">Email:</label>
+           <input type="email" name="email" id="email" placeholder="email" required><br><br>
+
+           <label id="number-label"> Number:</label>
+          <input type="number" name="number" id="number" min="0" max="10" placeholder="number" required><br><br>
+
+
+          <label for="dropdown">Choose a guitar:</label>
+            <select id="dropdown" name="guitars">
+                    <option value="fender">Fender</option>
+                    <option value="martin">Martin</option>
+                    <option value="epiphone">Epiphone</option>
+                    <option value="others">Others</option>
+            </select> <br> <br>
+
+           <br>
+           <div id="button-area">
+                <label id="gender-label">Select your gender:</label>
+                <input type="radio" name="gender" value="male"> Male <br>
+                <input type="radio" name="gender" value="female"> Female <br>
+                <input type="radio" name="gender" value="other"> Other <br>
+           </div>
+           <br>
+
+           <div id="button-area">
+                <label id="transportation-type-label">Payment Type:</label>
+                <input type="checkbox" name="payment1" value="cash"> Pay with Cash<br>
+                <input type="checkbox" name="payment2" value="car"> Pay with Card<br>
+                
+           </div>
+          <br> <br> <br>
+        <label id="additional-comments-label">Additional Comments:</label>
+         <textarea placeholder="Additional Comments"></textarea><br>
+          <input type="submit" id="submit">
+       </form>
+
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
